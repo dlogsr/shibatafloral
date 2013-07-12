@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link style="text/css" rel="stylesheet" href="des1style.css" />
+<link style="text/css" rel="stylesheet" href="contentstyle.css" />
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="location_script.js"></script>
+</head>
+<body>
+<div id="maincontent" class="main">
+
+    <div id="side" class="data"><h2>Locations</h2></div>
+        <div id="content" class="data">
+            <div id="locTop">
+                <nav id="locTopNav">
+                    <ul>
+                        <li id="SFO" class="locCat"><a href="#">San Francisco</a></li>
+                        <li id="LAX" class="locCat"><a href="#">Los Angeles</a></li>
+                        <li id="PDX" class="locCat"><a href="#">Portland</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="fullWrapper">
+                <div class="locElement">
+                  <iframe id="locMap" src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=620+Brannan+St,+San+Francisco,+California+94107&ie=UTF8&z=14&t=m&iwloc=near&output=embed" frameborder=0></iframe>
+                </div> 
+                <div class="locElement locAddy locSFO" id="locWindow">
+                    <div id="locInfo">
+                        620 Brannan St<br />
+                        (between 5th St & I-280) <br />
+                        San Francisco, CA 94107<br /><br />
+                        (415) 495-8611
+                    </div>
+                </div>
+                <div class="locElement locButtons">
+                    <div><a id="linkYelp" href="http://www.yelp.com/biz/shibata-floral-company-san-francisco" target="_blank"><img src="img/yelp.png" /></a></div>
+                    <div><a id="linkGmap" href="https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&hnear=620+Brannan+St,+San+Francisco,+California+94107&t=m&z=16" target="_blank"><img src="img/gmaps.png" /></a></div>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+</div>
+</body>
+</html>

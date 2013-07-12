@@ -1,0 +1,7 @@
+Key for browser apps (with referers)
+API key:	
+AIzaSyBPu0bDv_Q9Jfwi3inPtMXZSikEkUX4toU
+Referers:	
+Any referer allowed
+Activated on:	Jul 10, 2013 11:30 PM
+Activated by:	 dlogsr@gmail.com – you
