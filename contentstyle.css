@@ -134,6 +134,7 @@ td, th{
 
 #locMap{
 	background-color:#000;
+	background-image: url(locmap_default.jpg) no-repeat top right;
 	width: 380px;
 	height:280px;
 	border:2px solid black;

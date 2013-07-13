@@ -58,6 +58,7 @@ $(document).ready(function(){
 		};
 	});
 	$navCat.click(function() {
+		dockedAniComplete = false;
 		var category = $(this).attr('id');
 		if(category.toString() == lockedcat.toString() || category.toString() == 'null') {
 			//do nothing; you are already on that page
@@ -87,14 +88,15 @@ $(document).ready(function(){
 			
 			
 		if(docked == false){
-
 			$('#introtext, #intro').fadeOut(350);
 			$mainContent.removeClass('hidden');
 			$crest.stop(true, true).animate({"margin-top":150-122},1000).css('overflow','visible');;
 			$topBar.stop(true, true).animate({"height":"150px"},1000, function() {
 				docked = true;
 			});
-			$mainBG.stop(true, true).animate({"margin-top":"-666"},1500);
+			$mainBG.stop(true, true).animate({"margin-top":"-666"},1500,function(){
+				$('#locMap').attr('src','https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&z=14&iwloc=near');
+			});
 		} else {
 		}
 	});

@@ -8,7 +8,8 @@ $(document).ready(function(){
 	var $linkYelp = $('#linkYelp');
 	var $linkGmap = $('#linkGmap');
 
-	//default values: SF
+	//default values: SF. set as image to help with loading/ani slowdown
+	//$locMap.attr('src','locmap_default.jpg');
 
 	var addyArray = {
 		SFO: "620 Brannan St<br />(between 5th St & I-280) <br />San Francisco, CA 94107<br /><br />(415) 495-8611",
