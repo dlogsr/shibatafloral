@@ -95,7 +95,7 @@ $(document).ready(function(){
 				docked = true;
 			});
 			$mainBG.stop(true, true).animate({"margin-top":"-666"},1500,function(){
-				$('#locMap').attr('src','https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&z=14&iwloc=near');
+				//$('#locMap').attr('src','https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&z=14&iwloc=near');
 			});
 		} else {
 		}
