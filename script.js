@@ -3,17 +3,32 @@ var remainingHeight = $(window).height() *0.4;
 var docked = false;
 var lockedcat = "";
 
+var $navCat = $('.navcat');
+var $debugBox = $('#debug');
+var $topBar = $('#topbar');
+var $crest = $('#crest');
+var $mainContent = $('#maincontent');
+var $mainBG = $('#mainbg');
+var $waiting = $('#waiting');
+
+
+function resizeIt(){
+	windowHeight = $(window).height() * 0.6;
+	if(docked == false){
+		$topBar.css({"height":windowHeight});
+		if(windowHeight <= 667){
+			$crest.css("margin-top",windowHeight-122);
+		}
+		else{
+			$crest.css("margin-top",545);
+		}
+
+	}
+}
+
 $(document).ready(function(){
-	var $navCat = $('.navcat');
-	var $debugBox = $('#debug');
-	var $topBar = $('#topbar');
-	var $crest = $('#crest');
-	var $mainContent = $('#maincontent');
-	var $mainBG = $('#mainbg');
-	var $waiting = $('#waiting');
-	
-	$topBar.css({"height":windowHeight});
-	$crest.css("margin-top",windowHeight-122);
+
+	resizeIt();
 	
 	$navCat.hover(
 		function() {
@@ -44,7 +59,12 @@ $(document).ready(function(){
 			$('#'+lockedcat+'bar').removeClass('catActive');
 			$debugBox.html(lockedcat);
 			lockedcat="";
-			$crest.stop(true, true).animate({"margin-top":windowHeight-122},1000).css('overflow','visible');
+			if(windowHeight <= 667){
+				$crest.stop(true, true).animate({"margin-top":windowHeight-122},1000).css('overflow','visible');
+			}
+			else {
+				$crest.stop(true, true).animate({"margin-top":525},1000).css('overflow','visible');	
+			}
 			$topBar.stop(true, true).animate({"height":windowHeight},1000, function() {
 				docked = false;
 			});
@@ -94,7 +114,7 @@ $(document).ready(function(){
 			$topBar.stop(true, true).animate({"height":"150px"},1000, function() {
 				docked = true;
 			});
-			$mainBG.stop(true, true).animate({"margin-top":"-666"},1500,function(){
+			$mainBG.stop(true, true).animate({"margin-top":"-453"},1500,function(){
 				//$('#locMap').attr('src','https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&z=14&iwloc=near');
 			});
 		} else {
@@ -105,11 +125,6 @@ $(document).ready(function(){
 });
 
 $(window).resize(function() {
-	windowHeight = $(window).height() * 0.6;
-	remainingHeight = $(window).height() *0.4;
-	if(docked == false){
-		$('#topbar').css({"height":windowHeight});
-		$('#crest').css("margin-top",windowHeight-122);
-	}
+	resizeIt();
 });
 // JavaScript Document

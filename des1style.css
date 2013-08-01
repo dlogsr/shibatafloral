@@ -6,26 +6,29 @@
 }
 
 body{
-	margin: 0 0 0 0;
+	margin: 0 0 0 0; 
 	height:100%;
 	width:100%;
 	overflow-y:scroll;
 	font-family: Segoe UI, Arial, Verdana;
 	background-color:#E8EAD0;
-	background: url(seamlesstexture_bg1.jpg) repeat left top;
+	background: url(bedge_grunge.jpg) repeat left top;
 }
 
 .header{
-	max-width:1800px;
+	/*max-width:1400px;*/
 }
 
 #topbar{
 	background-color:#000;
 	background: url(floral3.jpg) no-repeat left bottom;
+	background-size:100%;
 	height:60%;
+	max-height:647px;
 	width:100%;
 	margin:auto;
 	position:relative;
+	top:0;
 	border-bottom:solid black 2px;
 }
 
@@ -115,22 +118,24 @@ body{
 	background: url('img/cat_locations.png') no-repeat center center;
 }
 
-#contact {
-	background: url('img/cat_contact.png') no-repeat center center;
+#about {
+	background: url('img/cat_about.png') no-repeat center center;
 }
 
 /*main area styles*/
 
 .main {
-	max-width:1800px;
+	/*max-width:1400px;*/
 	margin:auto;
 }
 
 #mainbg {
 	background-color:#ddd;
-	background:url(floral_bw3.jpg) no-repeat top left;
+	background:url(floral_bw3_2.jpg) no-repeat top left;
+	background-size:100%;
 	width:100%;
-	height:639px;
+	height:40%;
+	min-height:450px;
 	position:relative;
 	z-index:-1;
 	clear:both;
@@ -162,8 +167,8 @@ body{
 	z-index:-1;
 }
 
-#maincontent {
-	font-family: Segoe UI, Verdana, Arial;
+/*#maincontent {
+	font-family: Georgia, Segoe UI, Verdana, Arial;
 	background-color:white;
 	position:relative;
 	width:100%;
@@ -174,7 +179,7 @@ body{
 	font-size:1em;
 	z-index:-1;
 	text-align:center;
-}
+}*/
 
 #maincontent h1 {
 	text-align:center;
