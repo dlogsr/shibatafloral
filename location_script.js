@@ -18,9 +18,9 @@ $(document).ready(function(){
 	};
 	
 	var gmapsArray={
-		SFO: "https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&z=14&iwloc=near&output=embed",
-		LAX: "https://www.google.com/maps?q=755+Wall+Street,+Los+Angeles,+CA&hl=en&z=14&iwloc=near&output=embed",
-		PDX: "https://www.google.com/maps?q=3622+N+Leverman+St,+Portland,+OR&hl=en&&z=14&iwloc=near&output=embed"
+		SFO: "https://www.google.com/maps?q=620+Brannan+Street,+San+Francisco,+CA&hl=en&z=14&iwloc=near",
+		LAX: "https://www.google.com/maps?q=755+Wall+Street,+Los+Angeles,+CA&hl=en&z=14&iwloc=near",
+		PDX: "https://www.google.com/maps?q=3622+N+Leverman+St,+Portland,+OR&hl=en&&z=14&iwloc=near"
 	};
 	
 	var yelpArray={
