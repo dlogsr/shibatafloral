@@ -85,7 +85,7 @@ $(document).ready(function(){
 		}
 		else {
 				if(category == 'products'){
-					var categorypage = category+".php";
+					var categorypage = category+".php"; 
 				}
 				else {
 					var categorypage = category+".html";

@@ -197,3 +197,13 @@ section{
 .locButtons div:hover{
 	background-color:#11FF55;
 }
+
+/*styles for specials / prod table*/
+
+#prodTable{
+	padding:1em;
+}
+
+#addProductsForm form input{
+	width:400px;
+}
