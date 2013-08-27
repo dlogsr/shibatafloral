@@ -4,7 +4,7 @@
 <div id="maincontent" class="main">
 
     <div id="side" class="data"><h2>Products</h2></div>
-    <div id="content" class="data">
+    <section id="content" class="data">
 		<?php
 			mysql_connect("localhost","sfclax_mysql","shibata") or die(mysql_error());
 			mysql_select_db("sfclax_products") or die(mysql_error());
@@ -33,6 +33,6 @@
        	<iframe src="products_iframe.php" seamless="seamless" width="600px" height="300px" frameborder="0"></iframe>
         <p></p>
         <a href="products_add.php" target="_blank">Click here for products add form (testing)</a>
-    </div>
+    </section>
            
 </div>

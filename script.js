@@ -84,8 +84,8 @@ $(document).ready(function(){
 			//do nothing; you are already on that page
 		}
 		else {
-				if(category == 'products'){
-					var categorypage = category+".php";
+				if(category == 'products' || category == 'specials'){
+					var categorypage = category+".php"; 
 				}
 				else {
 					var categorypage = category+".html";
